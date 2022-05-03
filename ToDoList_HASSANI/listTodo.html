@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My to-do List</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+<style>
+ 
+ body
+ {
+margin-top:10px ;
+background-image:  url("https://wallpapercave.com/wp/wp9736911.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}    
+ul 
+{
+list-style: none;
+margin: 0;
+padding: 0;
+font-size: 14px;
+opacity: 0.85;
+font-style: normal;
+}
+a,a:hover
+{
+text-decoration: none;
+}
+
+.form-group 
+{
+    width: 45%;
+}
+li{
+padding: 8px;
+margin: 8px;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: 8px;
+direction: block;
+background: white;
+color: black;
+}
+i
+{
+ padding-right: 10px;
+ cursor: pointer;
+padding-top: 5px;
+ }
+.bg-custom
+{
+ background: #1597E5;
+ }
+
+.check
+      {
+        background: #A0DAA9;
+        text-decoration: line-through;
+      }  
+.fa-trash-alt
+{
+    padding-left: 10px;
+}
+    
+.container
+       {
+        margin-top: 20px;
+        width: fit-content;
+       min-width: 30%;
+       height: auto;     
+        }
+
+.outil{
+        font-size:14px;
+        font-weight:bold;
+        color:#333333;
+       }
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+ 
+.btn_style
+{
+   background-color: aliceblue; 
+   border-top-right-radius: 10px; 
+   border-bottom-right-radius: 10px;
+}
+.bar_style
+{
+    color: white;
+}
+ 
+
+    </style>
+</head>
+<body>
+
+<div id="time" style="margin-left: 10px;"> </div>
+    <center> <h1>𝓣𝓸-𝓓𝓸 <small>𝓛𝓲𝓼𝓽</small></h1></center>
+      <br>
+
+  <center>   
+  <div class="form-group">
+     
+      <span id="err"></span>
+       <input type="hidden" id="toDoListNo"  class="form-control">
+    <div class="input-group">
+  <input type="text" id="toDoList" placeholder="Entrer votre tache ici ..." class="form-control"  >
+  <div class="col-auto btn_style" >
+  <i class="fa fa-plus" style="margin-top: 6px; color: royalblue;" id="add_btn"></i>
+    </div>
+</div>
+          
+</div>
+ </center>     
+
+
+
+<div class="container" >
+    
+    
+    <div id="nbrTask" align="center"></div>
+    <div id="bar" > </div>
+
+     <div  id="listing"><ul class="to_do">  </ul></div>
+  </div>
+</div>
+
+<div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="list.js"></script>
+</div>
+
+
+</body>
